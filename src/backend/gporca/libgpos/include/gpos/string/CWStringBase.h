@@ -11,6 +11,9 @@
 #ifndef GPOS_CWStringBase_H
 #define GPOS_CWStringBase_H
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Woverloaded-virtual"
+
 #include "gpos/common/clibwrapper.h"
 #include "gpos/types.h"
 
@@ -109,6 +112,8 @@ public:
 };
 
 }  // namespace gpos
+
+#pragma GCC diagnostic pop
 
 #endif	// !GPOS_CWStringBase_H
 
