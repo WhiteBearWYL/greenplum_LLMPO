@@ -1806,6 +1806,7 @@ sendControlMessage(icpkthdr *pkt, int fd, struct sockaddr *addr, socklen_t peerL
 
 	/* retry 10 times for sending control message */
 	int counter = 0;
+	n = 0;
 	while (counter < 10)
 	{
 		counter++;
