@@ -49,7 +49,7 @@ Follow [appropriate linux steps](README.Linux.md) for getting your system ready 
 git submodule update --init
 
 # Configure build environment to install at /usr/local/gpdb
-./configure --with-perl --with-python --with-libxml --with-gssapi --prefix=/usr/local/gpdb
+./configure --with-perl --with-python --with-libxml --with-gssapi --enable-debug --prefix=/usr/local/gpdb
 
 # Compile and install
 make -j8
